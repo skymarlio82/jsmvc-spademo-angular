@@ -1,0 +1,27 @@
+{
+	"name" : "jsmvc-spademo-client",
+	"description" : "JSMVC SPADEMO AngularJS client application",
+	"main" : "",
+	"authors" : [
+		"Jitao Liu <jitao.liu82@gmail.com>"
+	],
+	"license" : "Apache 2.0",
+	"homepage" : "https://github.com/skymarlio82/jsmvc-spademo-angular",
+	"moduleType" : [],
+	"private" : true,
+	"ignore" : [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies" : {
+		"angular" : "~1.6.9",
+		"bootstrap" : "components/bootstrap#~3.3.7",
+		"jquery" : "components/jquery#~3.2.1",
+		"angular-ui-router" : "angular-ui-router#1.0.8",
+		"bootstrap-datepicker" : "~1.8.0",
+		"eonasdan-bootstrap-datetimepicker" : "~4.17.47"
+	}
+}

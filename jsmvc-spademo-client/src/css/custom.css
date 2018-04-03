@@ -1,0 +1,8 @@
+
+input.ng-invalid {
+	box-shadow: 0 0 2px #CC0000
+}
+
+/*input.ng-valid {
+	background-color: lightgreen;
+}*/

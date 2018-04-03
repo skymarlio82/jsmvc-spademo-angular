@@ -1,0 +1,23 @@
+<h2>Events ({{$ctrl.events.length}})</h2>
+<div class="table-responsive">
+	<table class="table table-striped">
+		<thead><tr><th>Id</th><th>Title</th><th>Start</th><th>End</th><th>Owner</th><th>Status</th><th></th></tr></thead>
+		<tbody class="eventListContent">
+			<tr ng-repeat='event in $ctrl.events'>
+				<td>{{event.id}}</td>
+				<td><a ui-sref='eventDetail({eventId : event.id})'>{{event.title}}</a></td>
+				<td>{{event.startStr}}</td>
+				<td>{{event.endStr}}</td>
+				<td>{{event.owner}}</td>
+				<td>{{event.status}}</td>
+				<td><button type="button" class="btn btn-xs btn-link" ng-click='$ctrl.closeEvent(event)'><span class="glyphicon glyphicon-remove-sign"></span></button>|<button type="button" class="btn btn-xs btn-link" ng-click='$ctrl.deleteEvent(event)'><span class="glyphicon glyphicon-remove"></span></button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="col-sm-4">
+	<a ui-sref='allEvents()'>All</a> | <a ui-sref='openingEvents()'>Opening</a> | <a ui-sref='closedEvents()'>Closed</a>
+</div>
+<div class="col-sm-2 col-sm-offset-6">
+	<a ui-sref='createEvent()'>Add Event</a>
+</div>

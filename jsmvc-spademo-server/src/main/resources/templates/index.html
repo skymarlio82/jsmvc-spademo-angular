@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="jsmvcAngularjs1SpaApp">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>JSMVC-ANGULARJS1-SPA</title>
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{/images/nike.ico}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/css/custom.css}" />
+</head>
+<body>
+	<div class="container body-content">
+		<layout-nav></layout-nav>
+		<div id="main" class="container">
+			<div ui-view=""></div>
+		</div>
+		<layout-footer></layout-footer>
+	</div>
+</body>
+<script type="text/javascript" th:src="@{/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js}"></script>
+<script type="text/javascript" th:src="@{/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js}"></script>
+<script type="text/javascript" th:src="@{/angular/angular.js}"></script>
+<script type="text/javascript" th:src="@{/angular-ui-router/release/angular-ui-router.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/app.js}"></script>
+<script type="text/javascript" th:src="@{/js/module/event-detail.js}"></script>
+<script type="text/javascript" th:src="@{/js/controller/event-detail.controller.js}"></script>
+<script type="text/javascript" th:src="@{/js/component/event-detail.component.js}"></script>
+<script type="text/javascript" th:src="@{/js/infrastructure/infrastructure.js}"></script>
+<script type="text/javascript" th:src="@{/js/infrastructure/httpErrorHandlingInterceptor.js}"></script>
+</html>
